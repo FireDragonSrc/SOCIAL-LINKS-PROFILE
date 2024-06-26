@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+      color: hsl(0, 0%, 100%);
+      text-decoration: none;
+    }
+    html, body{
+      height: 100%;
+    }
+    body{
+      background-color: hsl(0, 0%, 8%);
+    }
+    .container{
+      width: 350px;
+      height: 530px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+      gap: 12px;
+    }
+    button{
+      width: 90%;
+      height: 100px;
+      border-radius: 5px;
+      border: none;
+      background-color: hsl(0, 0%, 20%);
+      transition: .5s;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: hsl(75, 94%, 57%);
+    }
+    .perfil{
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .lugar{
+      color:hsl(75, 94%, 57%);
+      font-size: 10px;
+    }
+    .front{
+      font-size: 13px;
+    }
+    @media screen and (max-width:600px){
+      .container{
+        height: 600px !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<section class="container">
+  <img class="perfil" src="assets/images/avatar-jessica.jpeg" alt="">
+  <h2>Jessica Randall</h2>
+  <p class="lugar">London, United Kingdom</p>
+  <p class="front">"Front-end developer and avid reader."</p>
+
+  <button><a href="#">GitHub</a></button>
+  <button><a href="#">Frontend Mentor</a></button>
+  <button><a href="#">LinkedIn</a></button>
+  <button><a href="#">Twitter</a></button>
+  <button><a href="#">Instagram</a></button>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
